@@ -1,0 +1,19 @@
+#time
+time = float(input('Enter the Time You Would Like to Convert?'))
+unit = input ('ms, s, m, h, or d?')
+time = float(input('What Would You Like to Convert to?'))
+unit2 = input ('ms, s, m, h, or d?')
+if unit.upper() == "ms":
+    converted = weight * 1000
+    print("The Converted Time is " + float(converted))
+else:
+    converted = weight * 0.45
+    print("The Converted Time in UNIT is " + float(converted))
+
+
+#size
+width = 1000
+height = 1000
+
+#color
+bgcolor = (3, 124, 168)
