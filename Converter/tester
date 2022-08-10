@@ -1,12 +1,24 @@
-speed = int(input('Enter The Speed You Would Like to Convert: '))
-unit = input ('Kph or Mph? ')
-if unit.upper() == 'Kph':
-    converted = speed / 0.621371
-    print("The Converted speed is " + str(converted) + "Mph")
+#Time
+#WIP
+#units reletive to seconds
+ms = 0.001
+s = 1
+m = 60
+h = 3600
+d = 86400
+
+time = float(input('Enter the Time You Would Like to Convert: '))
+unit = input ('ms, s, m, h, or d? ')
+time = float(input('What Would You Like to Convert to? '))
+converted_unit = input ('ms, s, m, h, or d?')
+if unit.upper() == "ms":
+    converted = time * converted_unit
+    print("The Converted Time is " + float(converted) + converted_unit)
 else:
-    converted = speed * 1.609
-    print("The Converted speed is " + str(converted) + "Kph")
+    converted = time * 0.45
+    print("The Converted Time is " + float(converted) + converted_unit)
     input("Press enter to exit")
+
 
 #size
 width = 1000
