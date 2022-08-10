@@ -27,8 +27,8 @@ def time():
 
 #Temperature
 def temperature():
-    Temperature = int(input('Enter the Temperature You Would Like to Convert: '))
-    unit = input ('C or F? ')
+    Temperature = float(input('Enter the Temperature You Would Like to Convert: '))
+    unit = input('C or F? ')
     if unit.upper() == "C":
         converted = Temperature * (1.8) + 32
         print("The Converted Temperature is " + str(converted) + " F")
