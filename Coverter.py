@@ -1,8 +1,8 @@
 #weight
 def weight():
+    unit = input ('Would you like to convert to Kg or Lbs? ')
     weight = int(input('Enter The Weight You Would Like to Convert: '))
-    unit = input ('Kg or Lbs? ')
-    if unit.upper() == 'Kg':
+    if unit.lower() == 'lbs':
         converted = weight / 0.45
         print("The Converted Weight is " + str(converted) + " Lbs")
     else:
@@ -27,9 +27,9 @@ def time():
 
 #Temperature
 def temperature():
+    unit = input('Would you like to convert to C or F? ')
     Temperature = float(input('Enter the Temperature You Would Like to Convert: '))
-    unit = input('C or F? ')
-    if unit.upper() == "C":
+    if unit.lower() == "f":
         converted = Temperature * (1.8) + 32
         print("The Converted Temperature is " + str(converted) + " F")
     else:
@@ -40,13 +40,13 @@ def temperature():
 
 #Speed
 def speed():
-    speed = int(input('Enter The Speed You Would Like to Convert: '))
-    unit = input ('Kph or Mph? ')
-    if unit.upper() == 'Kph':
-        converted = speed / 0.621371
+    unit = input ('Are you converting from Kph or Mph? ')
+    speed = float(input('Enter The Speed You Would Like to Convert: '))
+    if unit.lower() == 'kph':
+        converted = speed / 1.609344 
         print("The Converted speed is " + str(converted) + " Mph")
     else:
-        converted = speed * 1.609
+        converted = speed * 1.6093440006147
         print("The Converted speed is " + str(converted) + " Kph")
         input("Press enter to exit")
 
