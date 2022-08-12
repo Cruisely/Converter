@@ -1,4 +1,7 @@
 #weight
+import unittest
+
+
 def weight():
     unit = input ('Would you like to convert to Kg or Lbs? ')
     weight = int(input('Enter The Weight You Would Like to Convert: '))
@@ -13,16 +16,7 @@ def weight():
 #Time
 #WIP
 def time():
-  time = float(input('Enter the Time You Would Like to Convert: '))
-  unit = input ('ms, s, m, h, or d? ')
-  time = float(input('What Would You Like to Convert to? '))
-  unit2 = input ('ms, s, m, h, or d?')
-  if unit.upper() == "ms":
-    converted = time * 1000
-    print("The Converted Time is " + float(converted) + " UNIT")
-  else:
-    converted = time * 0.45
-    print("The Converted Time is " + float(converted) + " UNIT")
+    print("Work in Progress")
     input("Press enter to exit")
 
 #Temperature

@@ -1,32 +1,34 @@
 #Time
 #WIP
 #units reletive to seconds
-ms = 0.001
-s = 1
-m = 60
-h = 3600
-d = 86400
 
 time = float(input('Enter the Time You Would Like to Convert: '))
 unit = input('ms, s, m, h, or d? ')
 converted_unit = str(input('Would You Like to Convert to ms, s, m, h, or d? '))
 if unit.lower() == "ms":
     converted = (time * unit) * converted_unit
-    print("The Converted Time is " + float(converted) + converted_unit)
+    print("The Converted Time is " + float(converted) + str(converted_unit))
 if unit.lower() == "s":
     converted = time * converted_unit
-    print("The Converted Time is " + float(converted) + converted_unit)
+    print("The Converted Time is " + float(converted) + str(converted_unit))
 if unit.lower() == "m":
-    converted = time * converted_unit
-    print("The Converted Time is " + float(converted) + converted_unit)
+    converted = (time * unit) * converted_unit
+    print("The Converted Time is " + float(converted) + str(converted_unit))
 if unit.lower() == "h":
-    converted = time * converted_unit
-    print("The Converted Time is " + float(converted) + converted_unit)
+    converted = (time * unit) * converted_unit
+    print("The Converted Time is " + float(converted) + str(converted_unit))
 elif unit.lower() == "d":
     converted = time * converted_unit
-    print("The Converted Time is " + float(converted) + converted_unit)
+    print("The Converted Time is " + float(converted) + str(converted_unit))
     input("Press enter to exit")
 
+
+
+ms = 0.001
+s = 1
+m = 60
+h = 3600
+d = 86400
 
 #size
 width = 1000
