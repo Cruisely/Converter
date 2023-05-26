@@ -13,7 +13,7 @@ def weight():
         print("The Converted Weight is " + str(converted) + " Kg")
         input("Press enter to exit")
 
-#Duration
+#Time
 def time():
     millisecond = "ms"
     second = "s"
