@@ -1,6 +1,5 @@
 #Time
 #WIP
-#units reletive to seconds
 
 time = float(input('Enter the Time You Would Like to Convert: '))
 unit = input('ms, s, m, h, or d? ')
@@ -22,17 +21,9 @@ elif unit.lower() == "d":
     print("The Converted Time is " + float(converted) + str(converted_unit))
     input("Press enter to exit")
 
-
-
+#units reletive to seconds
 ms = 0.001
 s = 1
 m = 60
 h = 3600
 d = 86400
-
-#size
-width = 1000
-height = 1000
-
-#color
-bgcolor = (3, 124, 168)

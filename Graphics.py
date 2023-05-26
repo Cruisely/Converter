@@ -4,7 +4,7 @@ from tkinter import *
 import os
 
 root = tk.Tk()
-root.title("EZ Converter")
+root.title("Converter")
 root.geometry('500x500')
 
 def weight():
@@ -37,3 +37,12 @@ output = Text(root, height = 5,
 output.pack()
 
 root.mainloop()
+
+##############
+
+#size
+width = 1000
+height = 1000
+
+#color
+bgcolor = (3, 124, 168)
